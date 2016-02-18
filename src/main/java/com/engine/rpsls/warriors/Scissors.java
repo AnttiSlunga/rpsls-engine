@@ -1,9 +1,9 @@
 package com.engine.rpsls.warriors;
 
+import com.api.rpsls.Warrior;
+
 import java.util.Arrays;
 import java.util.List;
-
-import com.api.rpsls.Warrior;
 
 public class Scissors extends Warrior {
 	
@@ -13,12 +13,12 @@ public class Scissors extends Warrior {
 
 	@Override
 	public List<String> wins() {
-		return Arrays.asList("Paper");
+		return Arrays.asList("Paper", "Lizard");
 	}
 
 	@Override
 	public List<String> loses() {
-		return Arrays.asList("Rock");
+		return Arrays.asList("Rock", "Spock");
 	}
 
 }
